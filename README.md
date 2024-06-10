@@ -148,14 +148,15 @@ All the customizations will be injected there.
 
 The reason of defining `ProjectVendor\StyleGuide\ViewModel\SectionBlocksProvider\YourThemeName` virtual type on top of this class is that thanks to that you can have different style guides defined for each theme used in the project.
 
-To apply custom view model to specific theme you need to create the following layout XML file in your theme folder: `ThanhHua_StyleGuide/layout/lingaro_style_guide_index_index.xml`.
+To apply custom view model to specific theme you need to create the following layout XML file in your theme folder: `ThanhHua_StyleGuide/layout/thanhhua_style_guide_index_index.xml`.
 Below you can find an example:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="lingaro.style_guide">
+        <referenceBlock name="
+        thanhhua.style_guide">
             <arguments>
                 <argument name="view_model" xsi:type="object">ProjectVendor\StyleGuide\ViewModel\SectionBlocksProvider\YourThemeName</argument>
             </arguments>
@@ -408,4 +409,4 @@ Currently Style Guide module supports the following Magento versions:
 
 ## 7. Skeleton integration
 
-You can automatically set up Lingaro Skeleton for module development. To do so, copy `Makefile.dist` to `Makefile` and fill in `SKELETON` variable with URL to Skeleton's GIT repository. Then, run `make`. This will set up a new Skeleton project in your current root directory and copy module files to `source/packages/module-style-guide`. To run a project, simply run `make up`. 
+You can automatically set up thanhhua Skeleton for module development. To do so, copy `Makefile.dist` to `Makefile` and fill in `SKELETON` variable with URL to Skeleton's GIT repository. Then, run `make`. This will set up a new Skeleton project in your current root directory and copy module files to `source/packages/module-style-guide`. To run a project, simply run `make up`. 

@@ -1,7 +1,7 @@
 {
   "name": "thanhhua/magento2-basic-style-guide",
   "description": "Magento 2 Basic Style Guide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "require": {
     "php": "^7.4 || ^8.1",
     "magento/framework": "103.0.*",
@@ -14,7 +14,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Lingaro\\StyleGuide\\": ""
+      "ThanhHua\\StyleGuide\\": ""
     }
   },
   "license": "MIT",
