@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Exemplary color
+    <virtualType name="ThanhHua\StyleGuide\Model\Color\Example" type="ThanhHua\StyleGuide\Model\Color">
+        <arguments>
+            <argument name="code" xsi:type="string"]>example</argument>
+            <argument name="label" xsi:type="string" translatable="true">example</argument>
+            <argument name="cssColor" xsi:type="string">#000000</argument>
+        </arguments>
+    </virtualType>
+    -->
+    <type name="ThanhHua\StyleGuide\ViewModel\ColorsProvider">
+        <arguments>
+            <argument name="colors" xsi:type="array">
+                <!-- Exemplary color
+                <item name="example" xsi:type="object">ThanhHua\StyleGuide\Model\Color\Example</item>
+                -->
+            </argument>
+        </arguments>
+    </type>
+    <!-- Exemplary icon
+    <virtualType name="ThanhHua\StyleGuide\Model\Icon\Example" type="ThanhHua\StyleGuide\Model\Icon">
+        <arguments>
+            <argument name="name" xsi:type="string" translatable="true">example</argument>
+            <argument name="cssClass" xsi:type="string">lingaro-base-sprite lingaro-base-icon-example</argument>
+        </arguments>
+    </virtualType>
+    -->
+    <type name="ThanhHua\StyleGuide\ViewModel\IconsProvider">
+        <arguments>
+            <argument name="icons" xsi:type="array">
+                <!-- Exemplary icon
+                <item name="example" xsi:type="object">ThanhHua\StyleGuide\Model\Icon\Example</item>
+                -->
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Colors" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Colors</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/colors.phtml</argument>
+            <argument name="viewModel" xsi:type="object">ThanhHua\StyleGuide\ViewModel\ColorsProvider</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Layouts" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Layouts</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/layouts.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Headings" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Headings</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/headings.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Paragraph" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Paragraph</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/paragraph.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\UnorderedList" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Unordered List</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/unordered_list.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\OrderedList" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Ordered List</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/ordered_list.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Links" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Links</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/links.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Buttons" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Buttons</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/buttons.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Form" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Form</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/form.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Tabs" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Tabs</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/tabs.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Breadcrumbs" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Breadcrumbs</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/breadcrumbs.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Tooltips" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Tooltips</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/tooltips.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Messages" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Messages</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/messages.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Pagination" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Pagination</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/pagination.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Popup" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Popup</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/popup.phtml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ThanhHua\StyleGuide\Model\Section\Icons" type="ThanhHua\StyleGuide\Model\Section">
+        <arguments>
+            <argument name="title" xsi:type="string" translatable="true">Icons</argument>
+            <argument name="template" xsi:type="string">ThanhHua_StyleGuide::section/icons.phtml</argument>
+            <argument name="viewModel" xsi:type="object">ThanhHua\StyleGuide\ViewModel\IconsProvider</argument>
+        </arguments>
+    </virtualType>
+    <type name="ThanhHua\StyleGuide\ViewModel\SectionBlocksProvider">
+        <arguments>
+            <argument name="sections" xsi:type="array">
+                <item name="layouts" xsi:type="object" sortOrder="10">ThanhHua\StyleGuide\Model\Section\Layouts</item>
+                <item name="colors" xsi:type="object" sortOrder="20">ThanhHua\StyleGuide\Model\Section\Colors</item>
+                <item name="headings" xsi:type="object" sortOrder="30">ThanhHua\StyleGuide\Model\Section\Headings</item>
+                <item name="paragraph" xsi:type="object" sortOrder="40">ThanhHua\StyleGuide\Model\Section\Paragraph</item>
+                <item name="unorderedList" xsi:type="object" sortOrder="50">ThanhHua\StyleGuide\Model\Section\UnorderedList</item>
+                <item name="orderedList" xsi:type="object" sortOrder="60">ThanhHua\StyleGuide\Model\Section\OrderedList</item>
+                <item name="links" xsi:type="object" sortOrder="70">ThanhHua\StyleGuide\Model\Section\Links</item>
+                <item name="buttons" xsi:type="object" sortOrder="80">ThanhHua\StyleGuide\Model\Section\Buttons</item>
+                <item name="form" xsi:type="object" sortOrder="90">ThanhHua\StyleGuide\Model\Section\Form</item>
+                <item name="tabs" xsi:type="object" sortOrder="100">ThanhHua\StyleGuide\Model\Section\Tabs</item>
+                <item name="breadcrumbs" xsi:type="object" sortOrder="110">ThanhHua\StyleGuide\Model\Section\Breadcrumbs</item>
+                <item name="tooltips" xsi:type="object" sortOrder="120">ThanhHua\StyleGuide\Model\Section\Tooltips</item>
+                <item name="messages" xsi:type="object" sortOrder="130">ThanhHua\StyleGuide\Model\Section\Messages</item>
+                <item name="pagination" xsi:type="object" sortOrder="140">ThanhHua\StyleGuide\Model\Section\Pagination</item>
+                <item name="popup" xsi:type="object" sortOrder="150">ThanhHua\StyleGuide\Model\Section\Popup</item>
+                <item name="icons" xsi:type="object" sortOrder="1000">ThanhHua\StyleGuide\Model\Section\Icons</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
