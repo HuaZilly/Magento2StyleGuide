@@ -3,7 +3,6 @@
 /**
  * ThanhHua Styleguide
  *
- *
  * @author    Thanh Hua <thanh.hua@balanceinternet.com.au>
  * @copyright Balance Internet Pty Ltd (https://www.balanceinternet.com.au)
  */

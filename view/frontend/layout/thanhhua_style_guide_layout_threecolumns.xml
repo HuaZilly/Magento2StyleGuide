@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
- * See LICENSE for license details.
+ * ThanhHua Styleguide
+ *
+ * @author    Thanh Hua <thanh.hua@balanceinternet.com.au>
+ * @copyright Balance Internet Pty Ltd (https://www.balanceinternet.com.au)
  */
 -->
+
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block name="lingaro.style_guide.layout.three_columns" template="ThanhHua_StyleGuide::layout/content.phtml" />
+            <block name="thanhhua.style_guide.layout.three_columns" template="ThanhHua_StyleGuide::layout/content.phtml" />
         </referenceContainer>
         <referenceContainer name="sidebar.main">
-            <block name="lingaro.style_guide.layout.three_columns.sidebar_main"
+            <block name="thanhhua.style_guide.layout.three_columns.sidebar_main"
                    template="ThanhHua_StyleGuide::layout/sidebar.phtml"
                    before="-" />
         </referenceContainer>
         <referenceContainer name="sidebar.additional">
-            <block name="lingaro.style_guide.layout.three_columns.sidebar_additional"
+            <block name="thanhhua.style_guide.layout.three_columns.sidebar_additional"
                    template="ThanhHua_StyleGuide::layout/sidebar.phtml"
                    before="-" />
         </referenceContainer>

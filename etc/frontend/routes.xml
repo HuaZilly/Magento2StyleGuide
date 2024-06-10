@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
- * See LICENSE for license details.
+ * ThanhHua Styleguide
+ *
+ * @author    Thanh Hua <thanh.hua@balanceinternet.com.au>
+ * @copyright Balance Internet Pty Ltd (https://www.balanceinternet.com.au)
  */
 -->
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="lingaro_style_guide" frontName="style_guide">
+        <route id="thanhhua_style_guide" frontName="style_guide">
             <module name="ThanhHua_StyleGuide"/>
         </route>
     </router>
