@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Thanh Styleguide
+ * ThanhHua Styleguide
  *
  *
  * @author    Thanh Hua <thanh.hua@balanceinternet.com.au>

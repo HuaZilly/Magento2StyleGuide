@@ -1,26 +1,25 @@
-Magento 2 Style Guide Module
+Magento 2 Basic Guide Module
 ============================
 
-by [Lingaro](https://lingarogroup.com/)
+by [Thanh Hua]
 
 ## 1. Introduction
 
 This module was created to help Magento 2 developers in building consistent themes.
 
-It adds the following page to the store: `/style_guide`. The Style Guide lists generic blocks, widgets and HTML elements. 
-The idea is to style all these elements at first and then build specific theme pages on top of them.
-The Style Guide is also a place for any custom element that was designed for a specific theme, like fancy sliders, accordions, etc.
+It adds the following page to the store: `/style_guide`. The Style Guide includes: 
+- All elements follows core theme
+- Generic blocks, widgets and HTML elements. 
+- The Style Guide is also a place for any custom element that was designed for a specific theme, like fancy sliders, accordions, etc.
 Each item of the Style Guide is easily customizable thanks to DI and theme inheritance system.
 It is very easy to add or remove an item from the Style Guide.
-
-The library is open sourced. Feel free to contribute!
 
 ## 2. Installation
 
 The recommended way to install this package is through [Composer](https://getcomposer.org/).
 
 ```
-composer require lingaro/magento2-module-style-guide
+composer require thanhhua/magento2-basic-style-guide
 ```
 
 ## 3. Overview of Style Guide sections

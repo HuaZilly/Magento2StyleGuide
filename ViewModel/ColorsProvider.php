@@ -1,8 +1,11 @@
 <?php
 
 /**
- * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
- * See LICENSE for license details.
+ * ThanhHua Styleguide
+ *
+ *
+ * @author    Thanh Hua <thanh.hua@balanceinternet.com.au>
+ * @copyright Balance Internet Pty Ltd (https://www.balanceinternet.com.au)
  */
 
 declare(strict_types=1);

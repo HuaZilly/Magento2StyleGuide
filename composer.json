@@ -1,6 +1,6 @@
 {
-  "name": "lingaro/magento2-module-style-guide",
-  "description": "Magento 2 Style Guide Module",
+  "name": "thanhhua/magento2-basic-style-guide",
+  "description": "Magento 2 Basic Style Guide",
   "version": "2.0.1",
   "require": {
     "php": "^7.4 || ^8.1",
@@ -20,8 +20,8 @@
   "license": "MIT",
   "authors": [
       {
-          "name": "Lingaro Sp. z o.o.",
-          "homepage": "https://lingarogroup.com/"
+          "name": "Thanh Hua",
+          "email": "huathanh2k@gmail.com"
       }
   ]
 }
